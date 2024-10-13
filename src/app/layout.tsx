@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={openSans.className}
+        className={`${openSans.className} bg-[#F7F4F2]`}
       >
         {children}
       </body>
