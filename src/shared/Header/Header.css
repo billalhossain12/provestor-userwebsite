@@ -1,0 +1,50 @@
+header .active{
+    border: 'solid';
+    padding-bottom: 8px;
+    border-bottom-color: #24B24B;
+    border-bottom-width: 3px;
+}
+
+header ul.large-device li a{
+    padding-bottom: 8px;
+    position: relative;
+}
+
+
+header ul.large-device li>a::after{
+    content: '';
+    background: #24B24B;
+    width: 0px;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: 0.3s;
+}
+
+header ul.large-device li:hover>a::after{
+    width: 30px;
+}
+
+header ul.large-device li div>a::after{
+    content: '';
+    background: #24B24B;
+    width: 0px;
+    height: 3px;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    transition: 0.3s;
+}
+header ul.large-device li div:hover>a::after{
+    width: 30px;
+}
+
+@media only screen and (max-width: 960px) {
+    header .active{
+        border: 'solid';
+        padding-bottom: 8px;
+        border-bottom-color: #000;
+        border-bottom-width: 3px;
+    }
+  }
