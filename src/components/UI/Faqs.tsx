@@ -105,15 +105,15 @@ const FAQs = [
 
 export default function Faqs() {
   return (
-    <section className="lg:mx-[3rem] mx-[0.5rem] bg-[#F7F4F2] pb-[4rem]">
-      <div className='bg-[#fff] md:p-[2.5rem] p-[0.8rem]'>
+    <section className="lg:mx-[3rem] mx-[0.5rem] bg-[#F7F4F2] mb-10">
+      <div className='bg-[#fff] md:p-[3.5rem]  p-5'>
       <div className="pb-[1.5rem]">
         <h3 className="lg:text-[3rem] md:text-[2.5rem] text-[2rem] font-semibold leading-[2.3rem] pb-[0.5rem] border-b-[1px] border-gray-900 inline-block">
         Popular Questions
           {/* <p className="w-[100%] h-[1px] bg-[#000]"></p> */}
         </h3>
       </div>
-      <div className='ml-[-1.8rem]'>
+      <div >
       <Swiper
         slidesPerView={1}
         height={100}
