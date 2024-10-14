@@ -1,7 +1,6 @@
 "use client";
 
 import "./Header.css";
-import k33StreetLogo from "../../assets/K33-svg-logo.svg";
 import { useState } from "react";
 import { Icon as CustomIcon } from "@iconify/react";
 import Hamburger from "hamburger-react";
