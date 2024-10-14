@@ -88,12 +88,11 @@ export default function Header() {
 
           {dropdownStudy && (
             <ul
-              className={`dropdown absolute top-[2rem] z-0 md:text-[1rem] text-[14px] bg-[#0E0E0E] border-l-[1px] border-l-[#353434] border-r-[1px] border-r-[#353434] border-b-[1px] border-b-[#353434] md:min-w-[10rem] w-[10rem] p-2 pt-[2.5rem] leading-[3rem]`}
+              className={`dropdown absolute top-[1.7rem] z-0 md:text-[1rem] text-[14px] bg-[#0E0E0E] border-l-[1px] border-l-[#353434] border-r-[1px] border-r-[#353434] border-b-[1px] border-b-[#353434] md:min-w-[10rem] w-[10rem] p-2 pt-[2.5rem] leading-[3rem]`}
             >
               <Link
                 onClick={handleHideStudyDropdown}
-                href="study/study-center"
-                end
+                href="/study/study-center"
               >
                 <li className="hover:bg-[#24B24B] hover:text-white px-1 cursor-pointer">
                   Study Center
@@ -102,14 +101,14 @@ export default function Header() {
 
               <Link
                 onClick={handleHideStudyDropdown}
-                href="/study/faq-panel"
+                href="/study/faq"
               >
                 <li className="hover:bg-[#24B24B] hover:text-white px-1 cursor-pointer">
                   FAQ
                 </li>
               </Link>
 
-              <Link onClick={handleHideStudyDropdown} href="/study/blog" end>
+              <Link onClick={handleHideStudyDropdown} href="/study/blog">
                 <li className="hover:bg-[#24B24B] hover:text-white px-1 cursor-pointer">
                   Blog
                 </li>
@@ -133,7 +132,7 @@ export default function Header() {
             className="flex items-center cursor-pointer"
             onClick={() => window.scrollTo(0, 0)}
           >
-            <Link href="about">
+            <Link href="/about">
               <div className="flex items-center gap-3">
                 <span>About</span>
                 {dropdownAbout ? (
@@ -145,8 +144,8 @@ export default function Header() {
             </Link>
           </div>
           {dropdownAbout && (
-            <ul className="md:text-[1rem] text-[14px] dropdown absolute top-[2rem] bg-[#0E0E0E] border-l-[1px] border-l-[#353434] border-r-[1px] border-r-[#353434] border-b-[1px] border-b-[#353434] md:min-w-[10rem] min-w-[10.5rem] p-2 pt-[2.5rem] leading-[3rem]">
-              <Link onClick={handleHideAboutDropdown} href="about/about-us" end>
+            <ul className="md:text-[1rem] text-[14px] dropdown absolute top-[1.7rem] bg-[#0E0E0E] border-l-[1px] border-l-[#353434] border-r-[1px] border-r-[#353434] border-b-[1px] border-b-[#353434] md:min-w-[10rem] min-w-[10.5rem] p-2 pt-[2.5rem] leading-[3rem]">
+              <Link onClick={handleHideAboutDropdown} href="/about/about-us">
                 <li className="hover:bg-[#24B24B] hover:text-white px-1 cursor-pointer">
                   About Us
                 </li>
@@ -154,7 +153,7 @@ export default function Header() {
 
               <Link
                 onClick={handleHideAboutDropdown}
-                href="/about/contact-us"
+                href="/about/contact"
               >
                 <li className="hover:bg-[#24B24B] hover:text-white px-1 cursor-pointer">
                   Contact Us
@@ -162,13 +161,13 @@ export default function Header() {
               </Link>
 
               {/* <li className="hover:bg-[#24B24B] hover:text-white px-1 cursor-pointer">Contact us</li> */}
-              <Link onClick={handleHideAboutDropdown} href="/about/careers" end>
+              <Link onClick={handleHideAboutDropdown} href="/about/careers">
                 <li className="hover:bg-[#24B24B] hover:text-white px-1 cursor-pointer">
                   Careers
                 </li>
               </Link>
 
-              <Link onClick={handleHideAboutDropdown} href="/about/press" end>
+              <Link onClick={handleHideAboutDropdown} href="/about/press">
                 <li className="hover:bg-[#24B24B] hover:text-white px-1 cursor-pointer">
                   Press
                 </li>

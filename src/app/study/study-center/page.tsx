@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import studyBannerImg from "../../assets/study-banner.svg";
+import studyBannerImg from "../../../assets/study-banner.svg";
 
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -41,7 +41,7 @@ const studyCenterDataArray = [
   },
 ];
 
-export default function StudyPage() {
+export default function StudyCenterPage() {
   return (
     <main className="bg-[#F7F4F2] pb-[0.5rem]">
       {/* Banner  */}
