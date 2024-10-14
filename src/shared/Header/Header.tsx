@@ -45,16 +45,7 @@ export default function Header() {
       {/* logo SVG  Container*/}
       <div className="lg:block lg:w-auto w-full flex items-center justify-between">
         <Link href="/" onClick={() => window.scrollTo(0, 0)}>
-          <Image
-            className="md:w-[15.5rem] w-[8rem] md:h-[3.5rem] h-[2rem]"
-            src={k33StreetLogo}
-            width={0}
-            height={0}
-            alt="Site Logo"
-          />
-          <h3 className="text-white text-right md:text-2xl text-xl md:mt-[-0.8rem] mt-[-0.3rem]">
-            Beta
-          </h3>
+          <h3 className="text-white text-[2rem] font-bold">Provestor</h3>
         </Link>
 
         {/* Mobile Device  */}
