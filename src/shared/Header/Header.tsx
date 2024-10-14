@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import "./Header.css";
 import k33StreetLogo from "../../assets/K33-svg-logo.svg";
@@ -10,9 +10,7 @@ import Link from "next/link";
 import Image from "next/image";
 import MobileMenu from "./MobileMenu";
 
-
 export default function Header() {
-
   const [currentUser, setCurrentUser] = useState({});
   const [visible, setVisible] = useState(false);
   const [dropdownStudy, setDropdownStudy] = useState(false);
@@ -99,10 +97,7 @@ export default function Header() {
                 </li>
               </Link>
 
-              <Link
-                onClick={handleHideStudyDropdown}
-                href="/study/faq"
-              >
+              <Link onClick={handleHideStudyDropdown} href="/study/faq">
                 <li className="hover:bg-[#24B24B] hover:text-white px-1 cursor-pointer">
                   FAQ
                 </li>
@@ -151,10 +146,7 @@ export default function Header() {
                 </li>
               </Link>
 
-              <Link
-                onClick={handleHideAboutDropdown}
-                href="/about/contact"
-              >
+              <Link onClick={handleHideAboutDropdown} href="/about/contact">
                 <li className="hover:bg-[#24B24B] hover:text-white px-1 cursor-pointer">
                   Contact Us
                 </li>
@@ -240,7 +232,7 @@ export default function Header() {
       )}
 
       {/* Mobile device menu  */}
-      <MobileMenu mobileMenu={mobileMenu}/>
+      <MobileMenu mobileMenu={mobileMenu} setMobileMenu={setMobileMenu} />
     </header>
   );
 }

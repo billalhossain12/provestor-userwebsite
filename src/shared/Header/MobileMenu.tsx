@@ -26,7 +26,7 @@ function Icon({ id, open }) {
     );
   }
 
-export default function MobileMenu({mobileMenu}) {
+export default function MobileMenu({mobileMenu, setMobileMenu}) {
   const [currentUser, setCurrentUser] = useState({});
   const [visible, setVisible] = useState(false);
   const [dropdownStudy, setDropdownStudy] = useState(false);
@@ -130,7 +130,7 @@ export default function MobileMenu({mobileMenu}) {
                         </li>
                       </Link>
                       <Link
-                        href="about/contact-us"
+                        href="/about/contact"
                         spy={true}
                         smooth={true}
                         offset={-700}
@@ -145,7 +145,7 @@ export default function MobileMenu({mobileMenu}) {
                         </li>
                       </Link>
                       <Link
-                        href="about/careers"
+                        href="/about/careers"
                         spy={true}
                         smooth={true}
                         offset={-700}
@@ -159,7 +159,7 @@ export default function MobileMenu({mobileMenu}) {
                           Careers
                         </li>
                       </Link>
-                      <Link href="about/press">
+                      <Link href="/about/press">
                         <li
                           onClick={() => {
                             setMobileMenu(false);
@@ -188,7 +188,7 @@ export default function MobileMenu({mobileMenu}) {
                 <AccordionBody>
                   <ul className="text-white text-[1rem] pl-[1.5rem]">
                     <Link
-                      href="study/study-center"
+                      href="/study/study-center"
                       onClick={() => {
                         setMobileMenu(false);
                         setOpen(0);
@@ -199,7 +199,7 @@ export default function MobileMenu({mobileMenu}) {
                       </li>
                     </Link>
                     <Link
-                      href="study/faq-panel"
+                      href="/study/faq"
                       onClick={() => {
                         setMobileMenu(false);
                         setOpen(0);
@@ -210,7 +210,7 @@ export default function MobileMenu({mobileMenu}) {
                       </li>
                     </Link>
                     <Link
-                      href="study/blog"
+                      href="/study/blog"
                       onClick={() => {
                         setMobileMenu(false);
                         setOpen(0);
@@ -220,7 +220,7 @@ export default function MobileMenu({mobileMenu}) {
                         Blog
                       </li>
                     </Link>
-                    <Link href="study/returns">
+                    <Link href="/study/returns">
                       <li
                         onClick={() => {
                           setMobileMenu(false);
