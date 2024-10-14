@@ -1,13 +1,13 @@
-import {Open_Sans} from "next/font/google";
+import { Open_Sans } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
+import Header from "@/shared/Header/Header";
 
 const openSans = Open_Sans({
-  weight: '400',
-  subsets: ['latin'],
-  display: 'swap',
-})
-
+  weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "Provestor User",
@@ -21,9 +21,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${openSans.className} bg-[#F7F4F2]`}
-      >
+      <body className={`${openSans.className} bg-[#F7F4F2]`}>
+        <Header />
         {children}
       </body>
     </html>
